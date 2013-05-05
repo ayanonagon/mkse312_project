@@ -22,9 +22,11 @@ Susan Greenberg and Ayaka Nonaka
 \maketitle
 
 \section{Introduction}
-In this report, we analyze the Facebook New Orleans dataset using different community detection techniques: modularity maximization using KL algorithm, spectral bipartition, and the Louvain-Twitter algorithm.
+In this report, we analyze the Facebook New Orleans dataset (\url{http://socialnetworks.mpi-sws.org/data-wosn2009.html}) using different community detection techniques: modularity maximization using KL algorithm, spectral bipartition, and the Louvain-Twitter algorithm.
 
 We extracted 5 disjoint subgraphs of 2,500 nodes from the dataset to make the computation more feasible.
+
+We were not able to compute the ``flops'' because it is obsolete in recent versions of MATLAB. This article explains more about why that is (near bottom of page): \url{http://www.mathworks.com/company/newsletters/news_notes/clevescorner/winter2000.cleve.html}
 
 \section{Modularity maximization using KL algorithm}
 Hopefully we can get some results here...
@@ -78,7 +80,7 @@ On the other hand, subgraph 5 has the largest $\lambda_2$ (0.9352), suggesting t
 		  
 
 \section{Louvain-Twitter algorithm}
-We used the Louvain algorithm MATLAB implementation by MIT Strategic Engineering. We ran the algorithm on the 5 subgraphs. The results are as follows:
+We used the Louvain algorithm MATLAB implementation by MIT Strategic Engineering (\url{http://strategic.mit.edu/downloads.php?page=matlab_networks}). We ran the algorithm on the 5 subgraphs. The results are as follows:
 
 \begin{table}[!htbp]
 		\begin{tabular}{lll}
