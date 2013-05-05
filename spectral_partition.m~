@@ -1,0 +1,18 @@
+function [] = spectral_partition(A)
+%SPECTRAL_PARTITION Summary of this function goes here
+%   Detailed explanation goes here
+
+L = laplacian_matrix(A);
+L = (L + L.') / 2;
+[V D] = eigs(L, 2, 'sa');
+v2 = V(:, 1);
+plot(v2);
+[v2sort, ILap] = sort(v2);
+Asort = A(ILap, I
+disp(D(2, 2)); % second smallest eigenvector
+plot(sort(V(:,2)), '.-');
+[ignore p] = sort(V(:, 2));
+spy(A(p, p));
+
+end
+
