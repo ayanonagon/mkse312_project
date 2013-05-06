@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  5 MAY 2013 22:42
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  5 MAY 2013 23:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -294,7 +294,7 @@ Package pdftex.def Info: ../graphs/a5.png used on input line 63.
 {/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2 <../
 graphs/a1.png (PNG copy)> <../graphs/a2.png (PNG copy)>] [3 <../graphs/a3.png (
 PNG copy)> <../graphs/a4.png (PNG copy)>]
-<../graphs/spectral_partition_a1.png, id=24, 562.1pt x 420.57124pt>
+<../graphs/spectral_partition_a1.png, id=22, 562.1pt x 420.57124pt>
 File: ../graphs/spectral_partition_a1.png Graphic file (type png)
 
 <use ../graphs/spectral_partition_a1.png>
@@ -302,7 +302,7 @@ Package pdftex.def Info: ../graphs/spectral_partition_a1.png used on input line
  83.
 (pdftex.def)             Requested size: 301.1261pt x 225.30821pt.
 
-<../graphs/spectral_partition_a2.png, id=25, 562.1pt x 420.57124pt>
+<../graphs/spectral_partition_a2.png, id=23, 562.1pt x 420.57124pt>
 File: ../graphs/spectral_partition_a2.png Graphic file (type png)
 
 <use ../graphs/spectral_partition_a2.png>
@@ -310,7 +310,7 @@ Package pdftex.def Info: ../graphs/spectral_partition_a2.png used on input line
  91.
 (pdftex.def)             Requested size: 301.1261pt x 225.30821pt.
 
-<../graphs/spectral_partition_a3.png, id=26, 562.1pt x 420.57124pt>
+<../graphs/spectral_partition_a3.png, id=24, 562.1pt x 420.57124pt>
 File: ../graphs/spectral_partition_a3.png Graphic file (type png)
 
 <use ../graphs/spectral_partition_a3.png>
@@ -318,7 +318,7 @@ Package pdftex.def Info: ../graphs/spectral_partition_a3.png used on input line
  99.
 (pdftex.def)             Requested size: 301.1261pt x 225.30821pt.
 
-<../graphs/spectral_partition_a4.png, id=27, 562.1pt x 420.57124pt>
+<../graphs/spectral_partition_a4.png, id=25, 562.1pt x 420.57124pt>
 File: ../graphs/spectral_partition_a4.png Graphic file (type png)
 
 <use ../graphs/spectral_partition_a4.png>
@@ -326,7 +326,7 @@ Package pdftex.def Info: ../graphs/spectral_partition_a4.png used on input line
  107.
 (pdftex.def)             Requested size: 301.1261pt x 225.30821pt.
 
-<../graphs/spectral_partition_a5.png, id=28, 562.1pt x 420.57124pt>
+<../graphs/spectral_partition_a5.png, id=26, 562.1pt x 420.57124pt>
 File: ../graphs/spectral_partition_a5.png Graphic file (type png)
 
 <use ../graphs/spectral_partition_a5.png>
@@ -337,27 +337,27 @@ Package pdftex.def Info: ../graphs/spectral_partition_a5.png used on input line
 [5 <../graphs/spectral_partition_a1.png (PNG copy)> <../graphs/spectral_partiti
 on_a2.png (PNG copy)>] [6 <../graphs/spectral_partition_a3.png (PNG copy)> <../
 graphs/spectral_partition_a4.png (PNG copy)>] [7 <../graphs/spectral_partition_
-a5.png (PNG copy)>] (./final_report.aux) ) 
+a5.png (PNG copy)>] [8] (./final_report.aux) ) 
 Here is how much of TeX's memory you used:
  2775 strings out of 493488
  37440 string characters out of 3141326
- 91742 words of memory out of 3000000
+ 91741 words of memory out of 3000000
  6014 multiletter control sequences out of 15000+200000
  12145 words of font info for 50 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,7n,24p,439b,262s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2012/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2012/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2012/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2012/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2012/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2012/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmtt10.pfb>
-Output written on final_report.pdf (7 pages, 384165 bytes).
+ 38i,7n,24p,724b,262s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2012/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2012/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2012/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2012/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2012/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2012/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2012/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmtt10.pfb>
+Output written on final_report.pdf (8 pages, 386177 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
+ 69 PDF objects out of 1000 (max. 8388607)
+ 41 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,3 +1,4 @@
+% this isn't completely correct, but it's too slow anyway...
 function [groups] = simple_modularity_maximization(adj)
 %SIMPLE_MODULARITY_MAXIMIZATION Summary of this function goes here
 %   Detailed explanation goes here

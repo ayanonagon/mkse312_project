@@ -11,7 +11,7 @@
 
 \date{May 6, 2013}
 \title{
-MKSE312 Final Project
+MKSE312 Final Report
 }
 \author{
 Susan Greenberg and Ayaka Nonaka
@@ -24,7 +24,7 @@ Susan Greenberg and Ayaka Nonaka
 \section{Introduction}
 In this report, we analyze the Facebook New Orleans dataset (\url{http://socialnetworks.mpi-sws.org/data-wosn2009.html}) using different community detection techniques: modularity maximization using KL algorithm, spectral bipartition, and the Louvain-Twitter algorithm.
 
-We extracted 5 disjoint subgraphs of 2,500 nodes from the dataset to make the computation more feasible. Figures \ref{fig:a1} - \ref{fig:a5} show the adjacency matrices of these subgraphs.
+We extracted 5 disjoint subgraphs of 2,500 nodes from the dataset to make the computation more feasible. Figures \ref{fig:a1} - \ref{fig:a5} show the adjacency matrices of these subgraphs. The the \texttt{.mat} files for these subgraphs are available for download here: \url{http://db.tt/vd5pFgKP}
 
 		 \begin{figure}
 		 		\begin{center}
@@ -69,14 +69,14 @@ We extracted 5 disjoint subgraphs of 2,500 nodes from the dataset to make the co
 We were not able to compute the ``flops'' because it is obsolete in recent versions of MATLAB. This article explains more about why that is (near bottom of page): \url{http://www.mathworks.com/company/newsletters/news_notes/clevescorner/winter2000.cleve.html}
 
 \section{Modularity maximization using KL algorithm}
-Hopefully we can get some results here...
+Currently, our modularity maximization implementation is too slow to get any tangible results. We are not sure why, but it takes a few minutes to get through 1 iteration of just finding the node to move, and that needs to happen 2,500 times per iteration, which means it would take 42 hours just for one iteration of that loop. We tried looking for existing implementations of this algorithm that might be more efficient, but could not find any. We also tried running Newman's fast community finding algorithm, but that also took too long to run for even just one graph, so we did not have much luck with any modularity related routines, except for the Louvain-Twitter algorithm, which ran within minutes.
 
 \section{Spectral bipartition}
-Figures \ref{fig:sb1} - \ref{fig:sb5} show the results for spectral bipartition on the 5 subgraphs. The values for $\lambda_2$ for each subgraph respectively are: 0.8992, 0.5614, 0.9856, 0.9116, 0.9352. The $\lambda_2$ values tell us how easily the network can be split into two groups; the smaller the number, the easier to partition.
+Figures \ref{fig:sb1} - \ref{fig:sb5} show the results for spectral bipartition (using the method in the lecture notes) on the 5 subgraphs. The values for $\lambda_2$ for each subgraph respectively are: 0.8992, 0.5614, 0.9856, 0.9116, 0.9352. The $\lambda_2$ values tell us how easily the network can be split into two groups; the smaller the number, the easier to partition.
 
 Subgraph 2 has the smallest $\lambda_2$ (0.5614), suggesting that it is the easiest to split, which seems to make sense since we can identify the two groups in the Figure \ref{fig:sb2}.
 
-On the other hand, subgraph 3 and 5 have the largest $\lambda_2$ (0.9856 and 0.9352 respectively), suggesting that they are the most difficult to split, which also seems to make sense because Figure \ref{fig:sb3} contains some nodes that are highly connected (the long lines that extend throughout the entire plot), and Figure \ref{fig:sb5} shows a cloud of plots that don't seem to have much obvious grouping.
+On the other hand, subgraph 3 and 5 have the largest $\lambda_2$ (0.9856 and 0.9352 respectively), suggesting that they are the most difficult to split, which also seems to make sense because Figure \ref{fig:sb3} contains some nodes that are highly connected (the long lines that extend throughout the entire plot), and Figure \ref{fig:sb5} shows a cloud of plots that do not seem to have much obvious grouping.
 
 		 \begin{figure}
 		 		\begin{center}
@@ -120,7 +120,7 @@ On the other hand, subgraph 3 and 5 have the largest $\lambda_2$ (0.9856 and 0.9
 		  
 
 \section{Louvain-Twitter algorithm}
-We used the Louvain algorithm MATLAB implementation by MIT Strategic Engineering (\url{http://strategic.mit.edu/downloads.php?page=matlab_networks}). We ran the algorithm on the 5 subgraphs. The results are as follows:
+The Louvain-Twitter algorithm is a greedy optimization algorithm on modularity to detect communities in large networks. We used MATLAB implementation by MIT Strategic Engineering (\url{http://strategic.mit.edu/downloads.php?page=matlab_networks}). We ran the algorithm on the 5 subgraphs. The results are as follows:
 
 \begin{table}[!htbp]
 		\begin{tabular}{lll}
@@ -134,6 +134,6 @@ We used the Louvain algorithm MATLAB implementation by MIT Strategic Engineering
 		\end{tabular}
 \end{table}
 
-Subgraph 2 has the highest modularity score, and it also happened to have the smallest $\lambda_2$, so out of all the subgraphs, it seems to be the most obviously clustered graph.
+Subgraph 2 has the highest modularity score, and it also happened to have the smallest $\lambda_2$, so out of all the subgraphs, it seems to be the most obviously clustered graph. Subgraph 4 got the lowest modularity score, which might make sense because the network is the most densely connected, based on looking at its adjacency matrix.
      
 \end{document}
