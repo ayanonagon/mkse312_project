@@ -32,15 +32,15 @@ We were not able to compute the ``flops'' because it is obsolete in recent versi
 Hopefully we can get some results here...
 
 \section{Spectral bipartition}
-Figures \ref{fig:sb1} - \ref{fig:sb5} show the results for spectral bipartition on the 5 subgraphs. The values for $\lambda_2$ for each subgraph respectively are: 0.8992, 0.5614, 0.9856, 0.9116, 0.9352. The $\lambda_2$ values tell us how easily the network can be split into two groups.
+Figures \ref{fig:sb1} - \ref{fig:sb5} show the results for spectral bipartition on the 5 subgraphs. The values for $\lambda_2$ for each subgraph respectively are: 0.8992, 0.5614, 0.9856, 0.9116, 0.9352. The $\lambda_2$ values tell us how easily the network can be split into two groups; the smaller the number, the easier to partition.
 
 Subgraph 2 has the smallest $\lambda_2$ (0.5614), suggesting that it is the easiest to split, which seems to make sense since we can identify the two groups in the Figure \ref{fig:sb2}.
 
-On the other hand, subgraph 5 has the largest $\lambda_2$ (0.9352), suggesting that it is the most difficult to split, which also seems to make sense because Figure \ref{fig:sb5} shows a cloud of plots that don't seem to have much obvious grouping.
+On the other hand, subgraph 3 and 5 have the largest $\lambda_2$ (0.9856 and 0.9352 respectively), suggesting that they are the most difficult to split, which also seems to make sense because Figure \ref{fig:sb3} contains some nodes that are highly connected (the long lines that extend throughout the entire plot), and Figure \ref{fig:sb5} shows a cloud of plots that don't seem to have much obvious grouping.
 
 		 \begin{figure}
 		 		\begin{center}
-		  		\includegraphics[width=300px]{spectral_partition_a1.png}
+		  		\includegraphics[width=300px]{../graphs/spectral_partition_a1.png}
 		  	\end{center}
 		  	\caption{Spectral Bipartition for Subgraph 1}
 		  	\label{fig:sb1}
@@ -48,7 +48,7 @@ On the other hand, subgraph 5 has the largest $\lambda_2$ (0.9352), suggesting t
 		 
 		 \begin{figure}
 		 		\begin{center}
-		  		\includegraphics[width=300px]{spectral_partition_a2.png}
+		  		\includegraphics[width=300px]{../graphs/spectral_partition_a2.png}
 		  	\end{center}
 		  	\caption{Spectral Bipartition for Subgraph 2}
 		  	\label{fig:sb2}
@@ -56,7 +56,7 @@ On the other hand, subgraph 5 has the largest $\lambda_2$ (0.9352), suggesting t
 		 
 		 \begin{figure}
 		 		\begin{center}
-		  		\includegraphics[width=300px]{spectral_partition_a3.png}
+		  		\includegraphics[width=300px]{../graphs/spectral_partition_a3.png}
 		  	\end{center}
 		  	\caption{Spectral Bipartition for Subgraph 3}
 		  	\label{fig:sb3}
@@ -64,7 +64,7 @@ On the other hand, subgraph 5 has the largest $\lambda_2$ (0.9352), suggesting t
 		 
 		 \begin{figure}
 		 		\begin{center}
-		  		\includegraphics[width=300px]{spectral_partition_a4.png}
+		  		\includegraphics[width=300px]{../graphs/spectral_partition_a4.png}
 		  	\end{center}
 		  	\caption{Spectral Bipartition for Subgraph 4}
 		  	\label{fig:sb4}
@@ -72,7 +72,7 @@ On the other hand, subgraph 5 has the largest $\lambda_2$ (0.9352), suggesting t
 		 
 		 \begin{figure}
 		 		\begin{center}
-		  		\includegraphics[width=300px]{spectral_partition_a5.png}
+		  		\includegraphics[width=300px]{../graphs/spectral_partition_a5.png}
 		  	\end{center}
 		  	\caption{Spectral Bipartition for Subgraph 5}
 		  	\label{fig:sb5}
