@@ -8,7 +8,6 @@
 
 function [groups_hist,Q]=newman_comm_fast(adj)
 
-
 groups={};
 groups_hist={};
 Q=[];
@@ -16,8 +15,13 @@ n=size(adj,1); % number of vertices
 groups_hist{1}={};
 
 for i=1:n
-  groups{i}=i; % each node starts out as one community
-  groups_hist{1}{i}=i;
+  grp = mod(i, 2) + 1;
+  if length(groups) > 1
+      groups{grp}=[groups{grp} i];
+  else
+     groups{grp}=[i]; 
+  end
+  groups_hist{1}{grp}=groups{grp};
 end
 
 Q(1) = Qfn(groups,adj);

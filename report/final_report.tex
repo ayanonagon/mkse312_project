@@ -24,7 +24,47 @@ Susan Greenberg and Ayaka Nonaka
 \section{Introduction}
 In this report, we analyze the Facebook New Orleans dataset (\url{http://socialnetworks.mpi-sws.org/data-wosn2009.html}) using different community detection techniques: modularity maximization using KL algorithm, spectral bipartition, and the Louvain-Twitter algorithm.
 
-We extracted 5 disjoint subgraphs of 2,500 nodes from the dataset to make the computation more feasible.
+We extracted 5 disjoint subgraphs of 2,500 nodes from the dataset to make the computation more feasible. Figures \ref{fig:a1} - \ref{fig:a5} show the adjacency matrices of these subgraphs.
+
+		 \begin{figure}
+		 		\begin{center}
+		  		\includegraphics[width=300px]{../graphs/a1.png}
+		  	\end{center}
+		  	\caption{Adjacency matrix of subgraph 1}
+		  	\label{fig:a1}
+		 \end{figure}
+
+		\begin{figure}
+				\begin{center}
+		 		\includegraphics[width=300px]{../graphs/a2.png}
+		 	\end{center}
+		 	\caption{Adjacency matrix of subgraph 2}
+		 	\label{fig:a2}
+		\end{figure}
+
+		\begin{figure}
+				\begin{center}
+		 		\includegraphics[width=300px]{../graphs/a3.png}
+		 	\end{center}
+		 	\caption{Adjacency matrix of subgraph 3}
+		 	\label{fig:a3}
+		\end{figure}
+
+		\begin{figure}
+				\begin{center}
+		 		\includegraphics[width=300px]{../graphs/a4.png}
+		 	\end{center}
+		 	\caption{Adjacency matrix of subgraph 4}
+		 	\label{fig:a4}
+		\end{figure}
+
+		\begin{figure}
+				\begin{center}
+		 		\includegraphics[width=300px]{../graphs/a5.png}
+		 	\end{center}
+		 	\caption{Adjacency matrix of subgraph 5}
+		 	\label{fig:a5}
+		\end{figure}
 
 We were not able to compute the ``flops'' because it is obsolete in recent versions of MATLAB. This article explains more about why that is (near bottom of page): \url{http://www.mathworks.com/company/newsletters/news_notes/clevescorner/winter2000.cleve.html}
 
@@ -94,5 +134,6 @@ We used the Louvain algorithm MATLAB implementation by MIT Strategic Engineering
 		\end{tabular}
 \end{table}
 
+Subgraph 2 has the highest modularity score, and it also happened to have the smallest $\lambda_2$, so out of all the subgraphs, it seems to be the most obviously clustered graph.
      
 \end{document}
